@@ -2,16 +2,16 @@ module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "~> 5.19"
 
-  name                               = var.vpc_name
-  cidr                               = var.cidr
-  azs                                = var.azs
-  private_subnets                    = var.private_subnets
-  public_subnets                     = var.public_subnets
-  single_nat_gateway                 = true
-  map_public_ip_on_launch            = true
-  enable_nat_gateway                 = true
-  enable_dns_hostnames               = true
-  enable_dns_support                 = true
+  name                    = var.vpc_name
+  cidr                    = var.cidr
+  azs                     = var.azs
+  private_subnets         = var.private_subnets
+  public_subnets          = var.public_subnets
+  single_nat_gateway      = true
+  map_public_ip_on_launch = true
+  enable_nat_gateway      = true
+  enable_dns_hostnames    = true
+  enable_dns_support      = true
 
   # #########################################
   # Default Security Group

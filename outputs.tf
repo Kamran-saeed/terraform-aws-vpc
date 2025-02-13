@@ -22,6 +22,12 @@ output "public_subnets" {
   description = "A list of the identities of the public subnetworks in which resources will be deployed."
 }
 
+output "private_rt_ids" {
+  value = module.vpc.private_route_table_ids
+
+  description = "A list of the identities of the private route tables."
+}
+
 output "default_sg_id" {
   value       = module.vpc.default_security_group_id
   description = "Default Security Group ID."
